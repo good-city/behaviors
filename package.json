@@ -1,0 +1,22 @@
+{
+    "name": "behaviors",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "author": "Sam Loomes",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/samloomes/behaviors.git"
+    },
+    "scripts": {
+        "dev": "NODE_ENV=development webpack-dev-server --port 8001 --mode development --open false"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.8.7",
+        "@babel/preset-env": "^7.8.7",
+        "babel-loader": "^8.0.6",
+        "webpack": "^4.42.0",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.11.0"
+    }
+}

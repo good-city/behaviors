@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Behaviors</title>
+
+    <style>
+        .popup {
+            background: white;
+            border: 1px solid gray;
+            display: none;
+            height: 100px;
+            left: 50%;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+        }
+
+        .popup.open {
+            display: block;
+        }
+
+        .popup__close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+        body.popup-open .popup-trigger {
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <a href="#popup" class="popup-trigger" data-behavior="popup-trigger">Popup trigger</a>
+
+    <div id="popup" class="popup" data-behavior="popup">
+        <a href="#popup" class="popup__close" data-ref-popup="close">Close</a>
+        <p>This is the content of my popup</p>
+    </div>
+
+    <script src="http://localhost:8001/js/app.js"></script>
+</body>
+</html>
